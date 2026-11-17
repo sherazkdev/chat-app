@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+
+    "smtp:verify": "tsx scripts/check-smtp.ts"
   },
   "dependencies": {
+    "@next/env": "^16.4.6",
     "argon2": "^0.45.2",
     "mongoose": "^9.12.0",
     "next": "16.4.5",
+    "nodemailer": "^10.6.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "zod": "^4.6.7"
@@ -24,6 +28,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
